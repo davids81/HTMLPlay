@@ -15,14 +15,40 @@
             </fieldset>
             <fieldset>
                 <legend>Your General Details</legend>
-                <label for="usrName">Name:<label>
-                <input type="text" name="UserName" id="usrName" placeholder="Your Full Name">
+                <div>
+                    <label for="usrName">Name:<label>
+                    <input type="text" name="UserName" id="usrName" placeholder="Your Full Name">
+                </div>
                 <div>
                     <span>Gender:</span>
                     <input type="radio" name="GenderOption" id="MaleOpt">
                     <label for="MaleOpt">Male</label>
                     <input type="radio" name="GenderOption" id="FemaleOpt">
                     <label for="FemaleOpt">Female</label>
+                </div>
+                <div>
+                    <label for="usrAge">Age</label>
+                    <input type="number" name="usrAge">
+                </div> 
+                <div>
+                    <label for="usrBirthday">Date of Birth:</label>
+                    <input type="date" name="usrBirthday">
+                </div>
+                <div>
+                    <label for="usrColor">Favorite Color:</label>
+                    <input type="color" name="usrColor">
+                </div>
+                <div>
+                    <label for="usrCountry">Country of Origin:</label>
+                    <select name="usrCountry">
+                        <option value="UnitedStates">United States</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+
                 </div>
             </fieldset>
             <input type="submit"> 
