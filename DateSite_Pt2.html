@@ -1,0 +1,134 @@
+<DOCTYPE html>
+<html>
+    <head>
+    <style>
+        fieldset {
+            background-color: lightyellow;
+            border: 10px solid yellow;
+            margin-bottom:10px;
+            width:720px;
+        }
+
+        label {
+            width: 180px;
+            display: inline-block;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        textarea {
+            width:360px;
+            height:50px;
+        }
+
+        input[type="radio"] + label, input[type="checkbox"] + label {
+            width: auto;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <h1>Please Enter Your Details For Our Dating Website</h1>
+        <form name="signUpForm">
+            <fieldset>
+                <legend>Your Image</legend>
+                <label for="facepic" id="">Your face</label>
+                <input type="file" name="facepic" accept="image/" required><br>
+                <label for="usrFace">Image Preview:</label>
+                <img name="usrFace" id="preview"/>
+            </fieldset>
+            <fieldset>
+                <legend>Your General Details</legend>
+                <div>
+                    <label for="usrName">Name:<label>
+                    <input type="text" name="usrName" id="usrName" placeholder="Your Full Name" required>
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" name="GenderOption" id="MaleOpt" required>
+                    <label for="MaleOpt">Male</label>
+                    <input type="radio" name="GenderOption" id="FemaleOpt" required>
+                    <label for="FemaleOpt">Female</label>
+                </div>
+                <div>
+                    <label for="usrAge">Age</label>
+                    <input type="number" name="usrAge" required>
+                </div> 
+                <div>
+                    <label for="usrBirthday">Date of Birth:</label>
+                    <input type="date" name="usrBirthday">
+                </div>
+                <div>
+                    <label for="usrColor">Favorite Color:</label>
+                    <input type="color" name="usrColor">
+                </div>
+                <div>
+                    <label for="usrCountry">Country of Origin:</label>
+                    <select name="usrCountry">
+                        <option value="UnitedStates">United States</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Indicators</legend>
+                <div>
+                    <label for="usrHgt">Height:</label>
+                    <span>Short</span><input name="usrHgt" type="range" min="0" max="100"><span>Tall</span>
+                </div>
+                <div>
+                    <label for="usrSalary">Salary:</label>
+                    <span>Poor</span><input name="usrSalary" type="range" min="0" max="100"><span>Rich</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your contact information</legend>
+                <div>
+                    <label for="usrEmail">Email:</label>
+                    <input type="email" required>
+                </div>
+                <div>
+                    <label for="usrMobilePhone">Mobile:</label>
+                    <input type="tel" name="usrMobilePhone">
+                </div>
+                <div>
+                    <label for="usrAddress">Address:</label>
+                    <textarea form="signUpForm"></textarea>
+                </div>
+                <div>
+                    <span>How to contact you:</span>
+                    <input type="checkbox" name="usrContactEmail" value="email">
+                    <label for="usrContactEmail">Email</label>
+                    <input type="checkbox" name="usrContactWA" value="wa">
+                    <label for="usrContactWA">Whats app</label> 
+                    <input type="checkbox" name="usrContactIAC" value="iac">
+                    <label for="usrContactIAC">In App Chat</label>
+                </div>
+            </fieldset>
+            <input type="submit"> 
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
