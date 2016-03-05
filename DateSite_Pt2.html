@@ -25,6 +25,38 @@
             width: auto;
         }
 
+        .leftlabel, .rightlabel {
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+        }
+
+        .rightlabel {
+            background-color: red;
+            color: white;
+        }
+
+        .leftlabel {
+            background-color: purple;
+            color: white;
+        }
+
+        input[type="range"] + label {
+            display: inline-block;
+            width: 50px;
+        }
+        
+        .sliderControls {
+            display: inline-block;
+        }
+
+        .rightlabel, .leftlabel, .sliderControls {
+            vertical-align: top;
+        }
+
+        .indicators-container {
+            display: inline-block;
+        }
 
     </style>
     </head>
@@ -77,13 +109,23 @@
             </fieldset>
             <fieldset>
                 <legend>Your Indicators</legend>
-                <div>
-                    <label for="usrHgt">Height:</label>
-                    <span>Short</span><input name="usrHgt" type="range" min="0" max="100"><span>Tall</span>
+                <!--<label for="usrHgt">Height:</label>-->
+                <div class="indicators-container">
+                    <p><label>Height:</label></p>
+                    <p><label>Salary:</label></p>
                 </div>
-                <div>
-                    <label for="usrSalary">Salary:</label>
-                    <span>Poor</span><input name="usrSalary" type="range" min="0" max="100"><span>Rich</span>
+                <div class="leftlabel">
+                    <p>Short</p>
+                    <p>Poor</p>
+                </div>
+                <div class="sliderControls">
+                   <p><input name="usrHgt" type="range" min="0" max="100"></p>
+                   <p><input name="usrSalary" type="range" min="0" max="100"></p>
+               </div>
+               <!--<label for="usrSalary">Salary:</label>-->
+                <div class="rightlabel">
+                    <p>Tall</p>
+                    <p>Rich</p>
                 </div>
             </fieldset>
             <fieldset>
